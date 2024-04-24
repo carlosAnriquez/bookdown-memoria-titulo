@@ -1,5 +1,5 @@
 # Introducción: 
-
+<div style="text-align: justify">
 En el contexto de declive de la protesta luego del llamado estallido social en octubre de 2019, la presente investigación busca analizar la justificación de la violencia policial en contexto de protesta social en Chile el año 2022.
 
 A través de una investigación cuantitativa transversal, el estudio busca poner a prueba las relaciones teóricas establecidas entre el conservadurismo político de derecha y el miedo como motivación epistémica. Partiendo de la premisa que las protestas sociales elevan los niveles de incertidumbre y amenaza social, se establece como hipótesis que quienes indiquen mayor miedo a manifestantes de primera línea, presentarán mayor tendencia al conservadurismo político, aumentando la probabilidad de que justifiquen la violencia policial en contexto de protesta social. 

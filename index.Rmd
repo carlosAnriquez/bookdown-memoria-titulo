@@ -1,8 +1,8 @@
 ---
-title: 'Título completo de la tesis o seminario de grado'
-subtitle: "Tesis para optar al grado de ...."
-author: "Mi nombre"
-date: "Fecha" # o para fecha actual: "`r Sys.Date()`"
+title: 'Proyecto memoria de título'
+subtitle: "¿Quiénes temen a las protestas? El rol del miedo y el conservadurismo político de derecha en las percepciones de violencia policial."
+author: "Carlos Anríquez"
+date: "" # o para fecha actual: "`r Sys.Date()`"
 institution: "Universidad de Chile"
 degree: "Seminario / Memoria / Tesis de Grado - Carrera de Sociología"
 advisor: "Profesor/a guía: mi supervisor/a"
@@ -21,9 +21,9 @@ lot: True
 
 # Resumen {-}
 
-Resumen  aquí
 
 
-# Agradecimientos {-}
 
-Agradecimientos aquí.
+
+
+

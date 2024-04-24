@@ -1,5 +1,5 @@
 # Marco Teórico:
-
+<div style="text-align: justify">
 ### Perspectivas sobre la violencia
 
 Cuando se estudia el uso de la fuerza por parte de la policía, se remite en esencia al carácter monopólico y legítimo de la fuerza por parte del Estado. Desde cierto momento hobbesiano en donde se cede el ejercicio de la violencia al Estado, o entendiendo el carácter monopólico y legítimo del uso de la fuerza como propiedad fundamental del Estado moderno en Weber (Trovero, 2020).  La idea del Estado parece inseparable de la violencia, aunque no sea reducible a esta. 
@@ -17,6 +17,7 @@ La justificación de la violencia, se define como la argumentación que fundamen
 ### Justificaciones de la violencia policial
 
 Estudios previos indican que la legitimidad policial (Worden & McLean, 2017) y la percepción de justicia procedimental (Tyler & Blader, 2003), predicen la aceptación pública al uso de la violencia policial. Cuando las autoridades realizan procedimientos justos y neutrales, las personas se sienten valoradas y son más propensas a acatar voluntariamente la autoridad policial (Gerber, Figuereido, Sáez, & Orchard, 2023). La legitimidad policial y la percepción de justicia procedimental, insta a los ciudadanos a aceptar el uso de la fuerza monopólica de la autoridad, pero solo cuando se mantiene dentro de ciertos límites normativos. La policía debe actuar de una forma procedimentalmente justa, pues actuar fuera de la ley eventualmente es una amenaza a su propia legitimidad (Bradford, Milani, & Jackson, 2016). En el caso de Chile, el efecto de la justicia procedimental es más fuerte en quienes se identifican como mapuches (Gerber, González, Jiménez-Moya, Moya, & Jackson, 2018).
+
 La justificación de la violencia policial también ha sido relacionada con las teorías de justicia distributiva en el contexto chileno. Quienes perciben menor injusticia en la distribución de los ingresos de los obreros, más justifican la violencia policial de Carabineros en situaciones como usar la fuerza para desalojar liceos tomados o reprimir marchas pacíficas. No obstante, el efecto del sentido de injusticia del obrero en la justificación de reprimir marchas pacíficas, pierde relevancia al incluir el efecto de ideologías autoritarias y de dominancia social (Venegas, 2022). 
 
 Los hallazgos más consistentes indican que los grupos minoritarios son más críticos hacia el uso de la violencia policial que los grupos mayoritarios (Arthur & Case, 1994). Otras investigaciones, sugieren que factores sociodemográficos influyen en la justificación al uso de la violencia policial. En general los hombres justifican más el uso excesivo de la fuerza policial, así como personas con menor nivel educativo y personas adultas por sobre jóvenes (Gerber, y otros, 2021).

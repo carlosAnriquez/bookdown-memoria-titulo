@@ -1,0 +1,60 @@
+```{r include=FALSE}
+pacman::p_load(dplyr, kableExtra, knitr)
+```
+
+```{r include=FALSE}
+table_format = if(is_html_output()) {
+  "html"
+} else if(is_latex_output()) {
+  "latex"
+}
+table_format2 = if(is_html_output()) {
+  T
+} else if(is_latex_output()) {
+  F
+}
+```
+
+
+# Marco metodológico:
+<div style="text-align: justify">
+
+El instrumento de medición utilizado para esta investigación es la última versión del Estudio Longitudinal Social de Chile (ELSOC) del Centro de Estudios de Conflicto y Cohesión Social de Chile (COES), cuyos datos fueron levantados entre julio y noviembre de 2022. La población contemplada en el estudio corresponde a hombres y mujeres entre 18 y 75 años en zonas urbanas de 40 ciudades del país (Centro de Estudios de Conflicto y Cohesión Social, 2022). Una vez extraídos los casos perdidos, la muestra efectiva se reduce a 818.
+
+### Variable Dependiente
+
+En base a la conceptualización de Basaure (2020) sobre justificación de la violencia y de Gerber y Jackson (2016) sobre violencia policial, utilizaremos como variable dependiente para este estudio el indicador señalado en la  \@ref(tab:tab-dep), que responde a la siguiente pregunta: ¿En qué medida cree usted que se justifican o no se justifican las siguientes situaciones? Que Carabineros use la fuerza para reprimir una manifestación pacífica. Las categorías de respuestas corresponden a una escala Likert de 1 a 5 respecto a cuando se justifica la represión de una marcha pacífica. 
+
+
+```{r tab-dep, results='asis'}
+
+if (!require("pacman")) install.packages("pacman")  #si falta pacman, instalar
+if (!require("tinytex")) install.packages("tinytex")#si falta tinytex, instalar
+pacman::p_load(knitr, kableExtra, dplyr, lavaan, sjPlot, ordinal, sjmisc, sjlabelled, ggrepel, summarytools) # librerias
+knitr::opts_chunk$set(warning = FALSE,  # mensaje de warning
+                      message = FALSE,  # mensajes/avisos de librerias  
+                      cache = FALSE,    # cache de los chunks,usar analisis pesados
+                      # out.width = '50%',# largo de imagen en %
+                      fig.pos= "H",     # posicion figuras H = HERE
+                      echo = FALSE      # incluir chunk en output
+)
+ 
+load(url())
+```
+
+
+### Variables Independientes
+
+Para distinguir la ideología política de los individuos usaremos como indicador la escala de auto ubicación política entre izquierda y derecha, en cuanto la orientación política sirve como un resumen abstracto de la ideología política (Haye et. al, 2009). La variable original es una escala del 0 al 12, en donde 0 a 4 corresponde a izquierda, 5 es centro, de 6 a 10 corresponde a derecha, 11 a independiente y 12 a ninguno (apolítico). Para abarcar las distinciones políticas entre izquierda y derecha (Bobbio, 1996), la variable fue recodificada con los valores presentados en la tabla 2. 
+
+Respecto al miedo a manifestantes violentos, la variable fue medida a través de la pregunta ¿En qué medida le generan miedo los siguientes actores y situaciones referidos a las protestas iniciadas a mediados de Octubre? Los manifestantes violentos en las protestas. Las categorías de respuesta corresponden a una escala Likert de cinco categorías de respuesta, desde nada a mucho miedo. 
+
+###	Variables de Control
+
+De acuerdo a estudios anteriores, factores socio-demográficos como edad, sexo y nivel socioeconómico influyen en la justificación de la violencia policial (Arthur & Case, 1994). La violencia policial suele ser más aceptada por hombres por sobre mujeres, adultos por sobre jóvenes y personas con bajo nivel educativo por sobre individuos con alto nivel educativo. El nivel educacional de los entrevistados fue recodificado de 9 a 5 categorías de respuesta, siguiendo la codificación CINE 2011 (UNESCO, 2013). Así también, personas que pertenecientes a grupos indígenas (Gerber, González, Jiménez-Moya, Moya, & Jackson, 2018) suelen justificar menos la violencia policial. La tabla 3 muestra los valores y frecuencias para las variables de control mencionadas. 
+
+###	Análisis
+
+En concordancia con los objetivos de esta investigación y las hipótesis planteadas, se utilizarán dos tipos de análisis. En primer lugar, usaremos estadísticos univariados para explorar las variables seleccionadas. En segundo lugar, utilizaremos análisis descriptivos bivariados y correlaciones para observar las relaciones entre las variables. Finalmente, debido al carácter categórico de la variable dependiente, propondremos una serie de modelos de regresión logística ordinal con efectos de interacción, que permitirá interpretar el efecto de las variables independientes en la dependiente observando la interacción entre las primeras. 
+
+

@@ -1,5 +1,5 @@
 # Pregunta de investigación:
-
+<div style="text-align: justify">
 **Pregunta**: ¿Cómo se relaciona el miedo a manifestantes de primera línea, el conservadurismo político de derecha y la justificación de la violencia policial en contexto de protesta en Chile el año 2022?
 
 **Objetivo general**: Analizar la relación entre el miedo a manifestantes de primera línea, el conservadurismo político y la justificación de la violencia policial en contexto de protesta en Chile el año 2022. 
