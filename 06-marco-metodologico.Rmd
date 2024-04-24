@@ -23,14 +23,15 @@ El instrumento de medición utilizado para esta investigación es la última ver
 
 ### Variable Dependiente
 
-En base a la conceptualización de Basaure (2020) sobre justificación de la violencia y de Gerber y Jackson (2016) sobre violencia policial, utilizaremos como variable dependiente para este estudio el indicador señalado en la  \@ref(tab:tab-dep), que responde a la siguiente pregunta: ¿En qué medida cree usted que se justifican o no se justifican las siguientes situaciones? Que Carabineros use la fuerza para reprimir una manifestación pacífica. Las categorías de respuestas corresponden a una escala Likert de 1 a 5 respecto a cuando se justifica la represión de una marcha pacífica. 
+En base a la conceptualización de Basaure (2020) sobre justificación de la violencia y de Gerber y Jackson (2016) sobre violencia policial, utilizaremos como variable dependiente para este estudio el indicador señalado en la  \@ref(tab:tab-dep), que responde a la siguiente pregunta: ¿En qué medida cree usted que se justifican o no se justifican las siguientes situaciones? Que Carabineros use la fuerza para reprimir una manifestación pacífica. Las categorías de respuestas corresponden a una escala Likert de 1 a 5 respecto a cuando se justifica la represión de una marcha pacífica.
 
-
-```{r tab-dep, results='asis'}
+```{r include=FALSE}
 
 if (!require("pacman")) install.packages("pacman")  #si falta pacman, instalar
-if (!require("tinytex")) install.packages("tinytex")#si falta tinytex, instalar
-pacman::p_load(knitr, kableExtra, dplyr, lavaan, sjPlot, ordinal, sjmisc, sjlabelled, ggrepel, summarytools) # librerias
+if (!require("tinytex")) install.packages("tinytex") #si falta tinytex, instalar
+if (!require("dplyr")) install.packages("dplyr") #si falta tinytex, instalar
+
+pacman::p_load(knitr,dplyr, kableExtra,summarytools) # librerias
 knitr::opts_chunk$set(warning = FALSE,  # mensaje de warning
                       message = FALSE,  # mensajes/avisos de librerias  
                       cache = FALSE,    # cache de los chunks,usar analisis pesados
@@ -39,18 +40,25 @@ knitr::opts_chunk$set(warning = FALSE,  # mensaje de warning
                       echo = FALSE      # incluir chunk en output
 )
  
-load(url("https://github.com/carlosAnriquez/bookdown-memoria-titulo/blob/main/input/df_analysis.RData"))
+load("df_analysis.RData")
 
 df_analysis <- df_analysis
 
 
 df_analysis$f05_03_w06 <- sjlabelled::set_label(df_analysis$f05_03_w06, label = "Que Carabineros use la fuerza para reprimir una manifestación pacifica")
 
-levels(df_analysis$f05_03_w06)[levels(df_analysis$f05_03_w06r) == "Nunca se justifica"] <- "Nunca"
-levels(df_analysis$f05_03_w06)[levels(df_analysis$f05_03_w06) == "Pocas veces se justifica"] <- "Pocas veces"
-levels(df_analysis$f05_03_w06)[levels(df_analysis$f05_03_w06) == "Algunas veces se justifica"] <- "Algunas veces"
-levels(df_analysis$f05_03_w06)[levels(df_analysis$f05_03_w06) == "Muchas veces se justifica"] <- "Muchas veces"
-levels(df_analysis$f05_03_w06)[levels(df_analysis$f05_03_w06) == "Siempre se justifica"] <- "Siempre"
+df_analysis$f05_03_w06 <- as.factor(df_analysis$f05_03_w06)
+
+df_analysis$f05_03_w06[df_analysis$f05_03_w06 == 1] <- "Nunca"
+df_analysis$f05_03_w06[df_analysis$f05_03_w06 == 2] <- "Pocas veces"
+df_analysis$f05_03_w06[df_analysis$f05_03_w06 == 3] <- "Algunas veces"
+df_analysis$f05_03_w06[df_analysis$f05_03_w06 == 4] <- "Muchas veces"
+df_analysis$f05_03_w06[df_analysis$f05_03_w06 == 5] <- "Siempre"
+
+```
+
+```{r tab-dep, results='asis'}
+
 
 
 df_vdep<- dfSummary(dplyr::select(df_analysis, f05_03_w06),
