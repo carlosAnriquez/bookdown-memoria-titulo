@@ -39,7 +39,44 @@ knitr::opts_chunk$set(warning = FALSE,  # mensaje de warning
                       echo = FALSE      # incluir chunk en output
 )
  
-load(url())
+load(url("https://github.com/carlosAnriquez/bookdown-memoria-titulo/blob/main/input/df_analysis.RData"))
+
+df_analysis <- df_analysis
+
+
+df_analysis$f05_03_w06 <- sjlabelled::set_label(df_analysis$f05_03_w06, label = "Que Carabineros use la fuerza para reprimir una manifestación pacifica")
+
+levels(df_analysis$f05_03_w06)[levels(df_analysis$f05_03_w06r) == "Nunca se justifica"] <- "Nunca"
+levels(df_analysis$f05_03_w06)[levels(df_analysis$f05_03_w06) == "Pocas veces se justifica"] <- "Pocas veces"
+levels(df_analysis$f05_03_w06)[levels(df_analysis$f05_03_w06) == "Algunas veces se justifica"] <- "Algunas veces"
+levels(df_analysis$f05_03_w06)[levels(df_analysis$f05_03_w06) == "Muchas veces se justifica"] <- "Muchas veces"
+levels(df_analysis$f05_03_w06)[levels(df_analysis$f05_03_w06) == "Siempre se justifica"] <- "Siempre"
+
+
+df_vdep<- dfSummary(dplyr::select(df_analysis, f05_03_w06),
+               plain.ascii = FALSE,
+               style = "grid",
+               tmp.img.dir = "tmp",
+               graph.magnif = TRUE,
+               headings = F,  # encabezado
+               varnumbers = F, # num variable
+               labels.col = T, # etiquetas
+               na.col = F,    # missing
+               graph.col = T, # plot
+               valid.col = F, # n valido
+               col.widths = c(1000,10,10,10,10)
+               )
+df_vdep$Variable <- c("Justificación violencia")
+
+df_vdep <- rename(df_vdep,
+                 Concept = Variable,
+                 Indicator = Label)
+kable(print(df_vdep), caption = "Variable Dependiente")
+```
+
+\begin{center}
+<font size="1"> Fuente: Elaboración propia. </font>
+\end{center}
 ```
 
 
