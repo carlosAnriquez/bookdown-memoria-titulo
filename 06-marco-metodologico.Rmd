@@ -54,12 +54,12 @@ pacman::p_load(dplyr,
                sessioninfo)
 
 
-knitr::opts_chunk$set(warning = FALSE,  # mensaje de warning
-                      message = FALSE,  # mensajes/avisos de librerias  
-                      cache = FALSE,    # cache de los chunks,usar analisis pesados
-                      # out.width = '50%',# largo de imagen en %
-                      fig.pos= "H",     # posicion figuras H = HERE
-                      echo = FALSE      # incluir chunk en output 
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE,   
+                      cache = FALSE,    
+                      
+                      fig.pos= "H",    
+                      echo = FALSE     
                       )
  
 load("ELSOC_wide_2016_2022_v1.00.RData")
@@ -255,12 +255,12 @@ df_vdep<- dfSummary(dplyr::select(df_proc, jv_carabineros_factor, jv_manifestant
                style = "grid",
                tmp.img.dir = "tmp",
                graph.magnif = TRUE,
-               headings = F,  # encabezado
-               varnumbers = F, # num variable
-               labels.col = T, # etiquetas
-               na.col = F,    # missing
-               graph.col = T, # plot
-               valid.col = F, # n valido
+               headings = F,
+               varnumbers = F, 
+               labels.col = T, 
+               na.col = F,  
+               graph.col = T, 
+               valid.col = F, 
                col.widths = c(1000,10,10,10,10)
                )
 df_vdep$Variable <- c("Justificación violencia por el control social", "Justificación violencia por el cambio social")
@@ -293,12 +293,12 @@ df_vindep<- dfSummary(dplyr::select(df_proc, orientacion_politica_recod_factor, 
                style = "grid",
                tmp.img.dir = "tmp",
                graph.magnif = TRUE,
-               headings = F,  # encabezado
-               varnumbers = F, # num variable
-               labels.col = T, # etiquetas
-               na.col = F,    # missing
-               graph.col = T, # plot
-               valid.col = F, # n valido
+               headings = F,  
+               varnumbers = F, 
+               labels.col = T, 
+               na.col = F,   
+               graph.col = T, 
+               valid.col = F, 
                col.widths = c(1000,10,10,10,10)
                )
 df_vindep$Variable <- c("Orientación política", "Miedo a manifestantes violentos", "Miedo al accionar de Carabineros en manifestaciones")
@@ -323,12 +323,12 @@ df_vcontrol<- dfSummary(dplyr::select(df_proc, sexo_factor,edad, pertenencia_ind
                style = "grid",
                tmp.img.dir = "tmp",
                graph.magnif = TRUE,
-               headings = F,  # encabezado
-               varnumbers = F, # num variable
-               labels.col = T, # etiquetas
-               na.col = F,    # missing
-               graph.col = T, # plot
-               valid.col = F, # n valido
+               headings = F,  
+               varnumbers = F, 
+               labels.col = T, 
+               na.col = F,    
+               graph.col = T, 
+               valid.col = F, 
                col.widths = c(1000,10,10,10,10)
                )
 df_vcontrol$Variable <- c("Sexo", "Edad", "Pertenencia a grupo indígena", "Nivel educativo")
