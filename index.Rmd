@@ -11,7 +11,7 @@ bibliography: [tesis.bib]
 biblio-style: apalike
 link-citations: yes
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: html_document
 documentclass: book
 fontsize: 14pt
 lof: True

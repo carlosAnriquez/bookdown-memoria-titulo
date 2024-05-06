@@ -1,0 +1,22 @@
+# Introducción: 
+
+<div style="text-align: justify">
+
+Las investigaciones sobre la justificación de la violencia abordan un fenómeno complejo que se extiende más allá de una situación particular. De forma general, estas justificaciones son entendidas como la argumentación que fundamenta una situación de violencia para desvincularlo de lo injusto, considerándolo como algo comprensible y con sentido (Basaure, 2020). La evaluación normativa de una situación de violencia, adquiere especial relevancia considerando que la dinámica de violencia intergrupal, es decir, aquella violencia que es conducida desde el interior de un grupo hacia el exterior, tiende a reforzar el uso de la fuerza por parte de los grupos involucrados (Gerber, González, Jiménez-Moya, Moya, & Jackson, 2018). 
+
+Desde la psicología social, se han examinado las disposiciones psicológicas que motivan a los individuos a justificar la violencia. En este sentido, el fenómeno ha sido ligado por separado a la ideología política y al miedo, moldeando la forma en que se percibe y se legitima la violencia en la sociedad.  Así también, el miedo y la ideología política han sido relacionados en diversos contextos. Específicamente, algunas investigaciones sugieren cierta afinidad entre la percepción del miedo y el conservadurismo político de derecha (Jost, Stern, Rule, & Sterling, 2017).
+
+Aunque de larga data, el continuo izquierda-derecha se sigue utilizando para diferenciar posturas ideológicas en base a un criterio básico: su posición respecto a la igualdad (Bobbio, 1996). Para la derecha política, la desigualdad entre individuos se acepta al considerarla natural, valorando las tradiciones y costumbres. En cambio, la izquierda política considera la desigualdad como una característica social, favoreciendo políticas en torno a la igualdad. Jost (2021), presenta una conceptualización similar, advirtiendo dos ejes que separan la izquierda y la derecha política. 1. advocar o resistir el cambio social y 2. aceptar o rechazar la desigualdad social, económica y política.  
+
+
+Esta investigación tiene por objetivo analizar las relaciones teóricas establecidas entre la justificación de la violencia, la orientación política y el miedo, en un ambiente marcado por una crisis de seguridad y el declive de la protesta social tras el llamado estallido social en octubre de 2019. La literatura distingue la justificación de la violencia en contexto de protesta según quienes la ejecutan y cuál es su objetivo; la violencia por el control social, perpetrada por Carabineros hacia manifestantes, y la violencia por el cambio social, ejercida por manifestantes (Gerber, González, Jiménez-Moya, Moya, & Jackson, 2018).
+
+En el nuevo escenario post-estallido, planteamos que  la justificación de la violencia policial ha aumentado y la justificación de la violencia por el cambio social ha disminuido, bajo el razonamiento que el apoyo a actitudes conservadoras aumenta en periodos de inestabilidad política y económica, ya que la sensación de amenaza activa actitudes políticas y sociales que ofrecen soluciones simples pero rígidas en materia de seguridad (Bonano & Jost, 2006 en Jost, Federico, & Napier, 2009; Thórisdóttir & Jost, 2011).
+
+Así, Planteamos como pregunta de investigación: ¿Cómo se relaciona el miedo, la orientación política y la justificación de la violencia en contexto de protesta en Chile el año 2022?
+
+Con el fin de indagar en quienes justifican la violencia en contexto de protesta, partimos describiendo el escenario de auge y declive de las manifestaciones luego del estallido social. Para definir los conceptos planteados en la pregunta, mencionamos brevemente algunas perspectivas teóricas sobre la violencia, estableciendo qué entenderemos por justificación de la violencia y cuáles son sus principales determinantes. Luego, se ahonda en el rol que juegan el miedo como motivación existencial y las orientaciones políticas en la justificación de la violencia en contexto de protesta. 
+
+En base a los objetivos e hipótesis de la investigación, se establece una estrategia metodológica mediante el uso de estadísticos univariados, bivariados, y finalmente se especifican las variables a utilizar para una serie de modelos de regresión logística ordinal con efectos de interacción. 
+
+
