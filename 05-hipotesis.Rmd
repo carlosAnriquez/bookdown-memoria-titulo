@@ -1,8 +1,0 @@
-# Hipótesis de investigación:
-<div style="text-align: justify">
-
-**H1**: Hay una asimetría en la percepción del miedo a los distintos actores de la protesta social. Las personas que se identifican con la derecha política **(H1a)** sienten más miedo a los manifestantes violentos, mientras que las personas de izquierda **(H1b)** sientes más miedo al accionar de Carabineros.
-
-**H2:** El miedo modera la relación entre orientación política y justificación de la violencia policial. Independiente de la orientación política, si disminuye el miedo, disminuye la probabilidad de que los individuos justifiquen de la violencia policial.
-
-**H3:** El miedo y la orientación política interactúan positivamente, aumentando la probabilidad de que los individuos justifiquen la violencia en contexto de protesta. El miedo a manifestantes y la orientación política de derecha interactúan aumentando los chances de que los individuos justifiquen la violencia por el control social **(H3a)**. El miedo a Carabineros y la orientación política de izquierda interactúan aumentando los chances de que los individuos justifiquen la violencia por el cambio social **(H3b)**.

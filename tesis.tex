@@ -90,54 +90,14 @@
 % \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
 % Syntax highlighting #22
-  \usepackage{color}
-  \usepackage{fancyvrb}
-  \newcommand{\VerbBar}{|}
-  \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-  % Add ',fontsize=\small' for more characters per line
-  \usepackage{framed}
-  \definecolor{shadecolor}{RGB}{248,248,248}
-  \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-  \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-  \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-  \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-  \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-  \newcommand{\BuiltInTok}[1]{#1}
-  \newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-  \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-  \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-  \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-  \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-  \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-  \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-  \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-  \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-  \newcommand{\ExtensionTok}[1]{#1}
-  \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-  \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-  \newcommand{\ImportTok}[1]{#1}
-  \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-  \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-  \newcommand{\NormalTok}[1]{#1}
-  \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-  \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-  \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-  \newcommand{\RegionMarkerTok}[1]{#1}
-  \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-  \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-  \newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-  \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-  \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-  \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 % To pass between YAML and LaTeX the dollar signs are added by CII
-\title{Título completo de la tesis o seminario de grado}
-\author{Mi nombre}
+\title{Proyecto memoria de título}
+\author{Carlos Anríquez}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\date{Fecha}
+\date{30-04-2024}
 \division{}
-\advisor{Profesor/a guía: mi supervisor/a}
+\advisor{Profesor/a guía: Juan Carlos Castillo, Co-guía: Macarena Orchard}
 \institution{Universidad de Chile}
 \degree{Seminario / Memoria / Tesis de Grado - Carrera de Sociología}
 %If you have two advisors for some reason, you can use the following
@@ -194,6 +154,20 @@
 
 }
 
+	\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 % End of CII addition
 %%
 %% End Preamble
@@ -230,331 +204,381 @@
 \chapter*{Resumen}\label{resumen}}
 \addcontentsline{toc}{chapter}{Resumen}
 
-Resumen aquí
+\hypertarget{introducciuxf3n}{%
+\chapter{Introducción:}\label{introducciuxf3n}}
 
-\hypertarget{agradecimientos}{%
-\chapter*{Agradecimientos}\label{agradecimientos}}
-\addcontentsline{toc}{chapter}{Agradecimientos}
+Las investigaciones sobre la justificación de la violencia abordan un fenómeno complejo que se extiende más allá de una situación particular. De forma general, estas justificaciones son entendidas como la argumentación que fundamenta una situación de violencia para desvincularlo de lo injusto, considerándolo como algo comprensible y con sentido (Basaure, 2020). La evaluación normativa de una situación de violencia, adquiere especial relevancia considerando que la dinámica de violencia intergrupal, es decir, aquella violencia que es conducida desde el interior de un grupo hacia el exterior, tiende a reforzar el uso de la fuerza por parte de los grupos involucrados (Gerber, González, Jiménez-Moya, Moya, \& Jackson, 2018).
 
-Agradecimientos aquí.
+Desde la psicología social, se han examinado las disposiciones psicológicas que motivan a los individuos a justificar la violencia. En este sentido, el fenómeno ha sido ligado por separado a la ideología política y al miedo, moldeando la forma en que se percibe y se legitima la violencia en la sociedad. Así también, el miedo y la ideología política han sido relacionados en diversos contextos. Específicamente, algunas investigaciones sugieren cierta afinidad entre la percepción del miedo y el conservadurismo político de derecha (Jost, Stern, Rule, \& Sterling, 2017).
 
-\hypertarget{introducciuxf3n-tesisfacsodown}{%
-\chapter{Introducción: tesisfacsodown}\label{introducciuxf3n-tesisfacsodown}}
+Aunque de larga data, el continuo izquierda-derecha se sigue utilizando para diferenciar posturas ideológicas en base a un criterio básico: su posición respecto a la igualdad (Bobbio, 1996). Para la derecha política, la desigualdad entre individuos se acepta al considerarla natural, valorando las tradiciones y costumbres. En cambio, la izquierda política considera la desigualdad como una característica social, favoreciendo políticas en torno a la igualdad. Jost (2021), presenta una conceptualización similar, advirtiendo dos ejes que separan la izquierda y la derecha política. 1. advocar o resistir el cambio social y 2. aceptar o rechazar la desigualdad social, económica y política.
 
-Tesisfacsodown es básicamente una propuesta o plantilla para poder escribir un trabajo final formateado en alta calidad, con opción tanto para pdf como para html. Para ello, basta con escribir el trabajo en un lenguaje de estructura simple: \textbf{markdown} (detalles mś adelante), el que luego es transformado a un documento formateado en pdf tal como se puede ver \href{docs/tesis.pdf}{aquí}, y si se desea también en html de manera simultanea. Es decir, se trata de concentrarse en escribir y el trabajo de formateo se lo dejamos a un tercero, que en este caso es la librería \texttt{bookdown} de R \citep{xie_Bookdown_2017} .
+Esta investigación tiene por objetivo analizar las relaciones teóricas establecidas entre la justificación de la violencia, la orientación política y el miedo, en un ambiente marcado por una crisis de seguridad y el declive de la protesta social tras el llamado estallido social en octubre de 2019. La literatura distingue la justificación de la violencia en contexto de protesta según quienes la ejecutan y cuál es su objetivo; la violencia por el control social, perpetrada por Carabineros hacia manifestantes, y la violencia por el cambio social, ejercida por manifestantes (Gerber, González, Jiménez-Moya, Moya, \& Jackson, 2018).
 
-\begin{figure}
+En el nuevo escenario post-estallido, planteamos que la justificación de la violencia policial ha aumentado y la justificación de la violencia por el cambio social ha disminuido, bajo el razonamiento que el apoyo a actitudes conservadoras aumenta en periodos de inestabilidad política y económica, ya que la sensación de amenaza activa actitudes políticas y sociales que ofrecen soluciones simples pero rígidas en materia de seguridad (Bonano \& Jost, 2006 en Jost, Federico, \& Napier, 2009; Thórisdóttir \& Jost, 2011).
 
-{\centering \includegraphics[width=1\linewidth]{images/flujobookdown} 
+Así, Planteamos como pregunta de investigación: ¿Cómo se relaciona el miedo, la orientación política y la justificación de la violencia en contexto de protesta en Chile el año 2022?
 
-}
+Con el fin de indagar en quienes justifican la violencia en contexto de protesta, partimos describiendo el escenario de auge y declive de las manifestaciones luego del estallido social. Para definir los conceptos planteados en la pregunta, mencionamos brevemente algunas perspectivas teóricas sobre la violencia, estableciendo qué entenderemos por justificación de la violencia y cuáles son sus principales determinantes. Luego, se ahonda en el rol que juegan el miedo como motivación existencial y las orientaciones políticas en la justificación de la violencia en contexto de protesta.
 
-\caption{Flujo tesisfacsodown}\label{fig:flujo}
-\end{figure}
+En base a los objetivos e hipótesis de la investigación, se establece una estrategia metodológica mediante el uso de estadísticos univariados, bivariados, y finalmente se especifican las variables a utilizar para una serie de modelos de regresión logística ordinal con efectos de interacción.
 
-Junto con realizar el trabajo de formato, quienes realizan análisis de datos con R tienen la posibilidad de incluir también los resultados (tablas, gráficos) de manera dinámica. Esto quiere decir que los análisis se realizan en el mismo documento, que se actualiza automáticamente en caso de modificaciones evitando así la ineficiencia de estar cortando y pegando cada vez que se realiza un cambio.
+\hypertarget{antecedentes}{%
+\chapter{Antecedentes:}\label{antecedentes}}
 
-Tesisfacsodown está basada en otros proyectos similares como \href{https://github.com/ismayc/thesisdown}{\texttt{tesisdown}} y también \href{https://github.com/ulyngs/oxforddown}{\texttt{oxforddown}}.
+Las agudas manifestaciones que sucedieron el 18 de octubre de 2019 se extendieron por más de cinco meses, y se detuvieron definitivamente con la llegada de la pandemia de Covid-19 que comenzó en marzo de 2020. Durante este periodo, las protestas iniciadas por estudiantes secundarios mostraron un amplio repertorio de acciones: las evasiones masivas en el metro de Santiago se transformaron en manifestaciones callejeras interrumpiendo el tránsito, barricadas y marchas no autorizadas por todo el país. La manifestación pacífica, daba paso a formas más violentas de protestas: incendios, daño al mobiliario público, saqueos a locales comerciales y enfrentamientos con Carabineros.
 
-\textbf{¿Cómo funciona?}
+Desde el día 18 de octubre y durante diez días, el ex presidente Sebastián Piñera declara estado de excepción, habilitando el accionar de las fuerzas armadas en el control del orden público y decretando toque de queda. En este contexto, el debate sobre la protesta social y el accionar de Carabineros en la contención del orden público se polariza. Por un lado, el estallido delincuencial denunciado por el gobierno, frente a un ``enemigo poderoso'' es seguido de iniciativas de ley ``anti-barricadas'' y ``anti-encapuchados'', buscando aumentar las penas para quienes cometan estos delitos. Por otra parte, un sector de la población defiende el actuar de los llamados encapuchados, presentes en marchas y movilizaciones anteriores, que pasan a ser nombrados como manifestantes de primera línea, argumentando su actuar frente a la represión de Carabineros.
 
-\emph{En breve}: haciendo una copia de la carpeta \emph{tesisfacsodown}, completando / reemplazando los contenidos en los archivos separados según secciones del documento (introducción, antecedentes, etc), y luego se utiliza el programa o librería \texttt{bookdown}, que funciona en el entorno R y que produce los documentos formateados en pdf y/o html. No es necesario saber R para poder utilizar tesisfacsodown, pero si estar dispuesto a aprender un par de cosas.
+Frente a la masividad de las protestas, diversas instituciones, tanto nacionales como internacionales, cuestionaron el rol de Carabineros frente al control del orden público, argumentando una política deliberada para dañar manifestantes dada por los mandos de Carabineros (Amnistia Internacional, 2019) y un uso excesivo de la fuerza (Instituto Nacional de Derechos Humanos, 2020), poniendo en tela de juicio los métodos y la discrecionalidad de la institución en el control del orden público en el uso de armas no letales o menos letales como la escopeta antidisturbios, gases lacrimógenos y la acción de las fuerzas de orden público frente a la congregación de marchas pacíficas.
 
-\hypertarget{requisitos}{%
-\section{Requisitos}\label{requisitos}}
+Aunque organismos internacionales como Human Right Watch (2019) y la Comisión Interamericana de Derechos Humanos (2019) dieron cuenta de violaciones en los Derechos Humanos por parte de Carabineros en el marco del llamado estallido social, incluyendo el derecho a la vida y el derecho a reunirse pacíficamente, el debate fue controvertido, generando opiniones favorables hacia el actuar de Carabineros frente al denunciado estallido delincuencial, apoyando la legítima aspiración de la institución por controlar el orden público.
 
-\begin{itemize}
-\item
-  Software: R/RStudio (ambos gratuitos).
-\item
-  librerías de R: \texttt{bookdown}, se instala desde RStudio en el menú Tools \textgreater{} Install packages \textgreater{} bookdown. Si se maneja R es más directo ejecutar desde la consola \texttt{install.packages("bookdown")}
-\item
-  Escritura: conocimiento de \emph{Markdown}, que es básicamente escribir simplemente texto con muy pocas marcas de edición (como encabezados, cursivas, negritas). Estas marcas de edición luego son interpretadas para poder generar documentos formateados en pdf, html (web) y también word. No requiere gran conocimiento previo, una introducción breve se puede encontrar \href{https://juancarloscastillo.github.io/in-socabi/lenguaje-reproducible.html}{aquí}.
-\item
-  No se requiere conocimiento de análisis de datos con R. Si bien este formato facilita la inclusión de resultados de análisis cuantitativos, puede ser perfectamente usado para trabajos con otras metodologías.
-\item
-  Si además de pdf se quiere publicar en formato web (es opcional) se necesitan conocimientos básicos de Git y Github. Una breve introducción se puede ver \href{https://cienciasocialabierta.netlify.app/class/08-class/}{aquí}, y con mucho mayor detalle en \url{https://happygitwithr.com/}.
-\end{itemize}
+El ex candidato presidencial José Antonio Kast llegó a declarar que las violaciones masivas a los derechos humanos por parte de Carabineros no existieron, denunciando la violencia y la alteración del orden público como una estrategia sostenida por sectores de izquierda (Durán \& Rojas, 2021). Sus dichos dejan entrever la opinión de un sector de la población que se identificó fuertemente con la institución policial, avalando sus acciones e invocando la necesidad de orden público frente a la radicalización de la protesta durante el estallido social, haciendo referencia a una mayoría silenciosa que buscaba la paz y la recuperación del orden público.
+El debate sobre el control del orden público por parte de Carabineros queda planteado, mas no resuelto: ¿hasta qué punto puede Carabineros intervenir por el control del orden público sin menoscabar el derecho a la reunión pacífica? El debate se enfría luego de la pandemia de Covid-19 (Nava \& Grigera, 2022), dando paso a una discusión marcada principalmente por: 1. Una recesión económica con una tasa de inflación superior al 10\% durante 2022 (García , 2022), y 2. Una crisis de seguridad pública, marcada por tres factores: el incremento de la presión migratoria post Covid, el aumento de la delincuencia y los atentados en la Araucanía producto del conflicto mapuche (Heiss, 2023).
 
-\hypertarget{pasos}{%
-\section{Pasos}\label{pasos}}
+Como advertimos, la crisis de seguridad es uno de los elementos más resaltados en la opinión pública (CEP, 2023). Esto se ha reflejado en un mayor apoyo a Carabineros en el combate contra la delincuencia (CADEM, 2023), generando un contexto marcado por la percepción generalizada de inseguridad, el aumento de la delincuencia y la migración descontrolada. Aunque el miedo al delito es un problema ampliamente estudiado, algunos autores (Vozmediano, San Juan , \& Vergara, 2008), sugieren separar la percepción subjetiva de los individuos de los índices objetivos de seguridad y delito. Esto implica entender el miedo a la delincuencia más allá de una perspectiva criminológica, como parte de una temática mayor de la percepción de inseguridad (Muratori \& Zubieta, 2013), que incluye no solo la delincuencia tradicional sino también el vandalismo, el terrorismo, u otras amenazas, en las que se puede incluir las protestas sociales.
 
-El primer paso consiste es obtener la carpeta de ejemplo \textbf{tesisfacsodown}, luego reemplazar algunos contenidos y obtener el documento formateado mediante un simple click en RStudio. Existen dos formas:
+Rottenbacher (2008, pág. 37), define el contexto socio-emocional como las representaciones colectivas de la situación sociopolítica de una nación, cargadas afectivamente, que predominan en una colectividad durante un período histórico y sociopolítico determinado. Estas representaciones influyen en las relaciones sociales dentro de esa colectividad y en sus representaciones sociales sobre el mundo, el presente y el futuro.
 
-\begin{itemize}
-\tightlist
-\item
-  simplemente bajar la carpeta desde \href{}{aquí}
-\item
-  para quienes tengan una cuenta en Github, lo más facil es hacer un fork del repositorio \url{https://github.com/juancarloscastillo/tesisfacsodown}, luego clonarlo localmente y comenzar a trabajar desde ahí. Esta opción es la más convieniente si se quiere luego publicar la tesis online (detalles abajo en sección de publicación web).
-\end{itemize}
+Diversas investigaciones, incluso en el contexto latinoamericano (Rottenbacher de Rojas, Amaya , Genna, \& Pulache, 2009), sugieren que la percepción de inseguridad incrementa más en quienes son renuentes a los cambios sociales. Las actitudes hacia el crimen, vigilancia y punitivismo expresan un mismo fenómeno emergente: están envueltos en lo que los individuos perciben como hostil, lo que quieren y como creen que debe organizarse la sociedad (Gerber \& Jackson, 2016, pág. 15).
 
-Una vez que se tiene la carpeta localmente, hacer doble click en el archivo \texttt{tesis.Rproj}, con lo que se abrirá RStudio (tiene que estar instalado previamente, tutorial \href{https://multivariada.netlify.app/class/\#installR}{aquí}). En RStudio hacer click sobre el botón ``build book'':
+La literatura converge en que hay cierta afinidad entre la percepción de miedo, amenaza y posturas conservadoras (Jost, Stern, Rule, \& Sterling, 2017). Así mismo, la intolerancia a la ambigüedad, evitar la incertidumbre y la necesidad por orden y estructura han sido sistemáticamente relacionados positivamente con el conservadurismo político (Jost, Glaser, Kruglanski, \& Sulloway, 2003).Otros estudios (Bonano \& Jost, 2006 en Jost, Federico, \& Napier, 2009), sugieren que el apoyo hacia actitudes conservadoras y de derecha aumentan en periodos de inestabilidad política y económica, bajo la premisa de que la sensación de amenaza activa actitudes políticas y sociales que ofrecen soluciones simples pero rígidas en materia de seguridad (Thórisdóttir \& Jost, 2011).
 
-\begin{figure}
+La propuesta de investigación busca indagar el proceso que opera en relación al miedo, la orientación política y la justificación de la violencia en contexto de protesta. Considerando que el clima socio-emocional post-estallido, marcado por una crisis de inseguridad, puede generar percepciones diferenciadas hacia la protesta social, al elevar los niveles de incertidumbre y amenaza. En este marco, el miedo como motivación existencial, puede cobrar mayor relevancia, moderando la relación entre orientación política y justificación de la violencia. Es decir, independiente de la orientación política, si disminuye el miedo, disminuye la justificación de la violencia.
 
-{\centering \includegraphics[width=0.6\linewidth]{images/build_book} 
+Así también el miedo y la orientación política pueden interactúan positivamente, aumentando los chances de que los individuos justifiquen la violencia en contexto de protesta. Por un lado, el aumento del miedo a manifestantes interactúa con la orientación política de derecha, aumentando los chances de que se justifique la violencia policial. Por otro lado, el miedo hacia Carabineros puede interactuar positivamente con la orientación política de derecha, aumentando los chances de que los individuos justifiquen la violencia por el cambio social.
 
-}
+\hypertarget{pregunta-de-investigaciuxf3n}{%
+\chapter{Pregunta de investigación:}\label{pregunta-de-investigaciuxf3n}}
 
-\caption{Generando los documentos en pdf y html}\label{fig:build}
-\end{figure}
+\textbf{Pregunta}: ¿Cómo se relaciona el miedo, la orientación política y la justificación de la violencia policial en contexto de protesta en Chile el año 2022?
 
-Con esto aparecerá en el visor de RStudio (pestaña Viewer) el documento en formato (html) y también se generará el documento tesis.pdf en la carpeta docs, y al que se puede acceder desde el ícono pdf en la barra superior del documento en html. Lo que aparece en los documentos html y pdf es este mismo documento pdf/html que están viendo ahora, pero que ahora se encuentra guardado localmente en sus computadores y que pueden modificar con los contenidos de sus trabajos.
+\textbf{Objetivo general}: Analizar la relación entre el miedo, la orientación política y la justificación de la violencia policial en contexto de protesta en Chile el año 2022.
 
-\emph{Detalles}
-
-La carpeta tiene una serie de archivos y subcarpetas. Lo que hace el botón ``build book'' es activar la función \texttt{bookdown} de R que permite convertir el contenido escrito en Markdown hacia html y pdf. Para ello, los contenidos de la carpeta se organizan de la siguiente manera:
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Archivo index.Rmd}: este archivo contiene
-
-  \begin{itemize}
-  \tightlist
-  \item
-    una serie de campos para poder personalizar e identificar la tesis, como título, autor, etc.
-  \item
-    de manera opcional se puede incluir un archivo con referencias bibliográficas .bib en caso de utilizar formato \texttt{bibtex} (que puede ser generado con gestores de referencias como Zotero o Mendeley, mayores detalles revisar \href{https://cienciasocialabierta.netlify.app/class/05-class/}{aquí}.
-  \item
-    también aparecen algunas opciones que tienen que ver con la generación del documento pdf y del sitio que no hay que modificar.
-  \item
-    finalmente, en este archivo también se puede incluir el Resumen / abstract del trabajo.
-  \end{itemize}
-\item
-  \textbf{Secciones del trabajo}: es una propuesta de archivos markdown con extensión .Rmd que comienzan con un número, y es donde se separan las distintas secciones o capítulos. Podría también ser un solo gran archivo con todos los contenidos, pero esta división permite un mayor orden en el trabajo y también separa en distintas páginas web en el caso de publicación en este formato. El orden en que aparecen las secciones en el documento final se indica con un número al inicio del archivo (ej: 01-intro.Rmd). Los archivos de las secciones que aparecen en esta carpeta son solo de ejemplo y pueden ser eliminados / reemplazados de acuerdo a la estructura preferida.
-\end{itemize}
-
-Adicionalmente se encuentran:
-
-\begin{itemize}
-\item
-  \emph{Archivos Readme} (.md y .html): contienen la información que aparece aquí, pueden ser eliminados posteriormente.
-\item
-  \emph{Archivos .yml}: son \_output y \_bookdown, y contienen información para generar los documentos pdf y html, no modificar
-\item
-  \emph{tesis.Rproj}: este es archivo que permite acceder a RStudio desde esta carpeta y activar las funciones necesarias para generar el documento formateado. Por lo tanto, luego de bajar la carpeta hacer doble click en este archivo.
-\item
-  \emph{tesis.bib}: es el archivo que contiene las referencias bibliográficas en formato bibtex, en caso de utilizar esta forma de referenciar. El archivo debe mantenerse con este nombre, de lo contrario no funcionará en el pdf.
-\item
-  \emph{Carpetas}:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    images: para guardar imágenes que luego se puedan llamar desde los documentos. Para poder insertarlas desde los documentos Rmd se requiere dar la ruta a la imagen, por ejemplo: images/mi\_imagen.jpg. Que las imágenes se encuentren en esta carpeta es opcional, solo ayuda al orden de los documentos.
-  \item
-    templates: aquí se encuentran archivos que permiten dar formato a los documentos pdf y html (no modificar ni eliminar)
-  \item
-    docs: carpeta producida automáticamente que contiene los documentos generados y formateados en pdf y/o html.
-  \end{itemize}
-\end{itemize}
-
-\hypertarget{algunos-detalles-adicionales}{%
-\section{Algunos detalles adicionales:}\label{algunos-detalles-adicionales}}
-
-\begin{itemize}
-\item
-  para más opciones de bookdown y detalles en general consultar \url{https://rubenfcasal.github.io/bookdown_intro/} (en español).
-\item
-  el formato del pdf es para ser impreso por los dos lados, por eso incluye algunas páginas en blanco (por ejemplo, la paǵina de atrás de la portada), y también los números de página se van alternando entre izquierda y derecha
-\item
-  Es posible generar una referenciación automática de tablas, imágenes y gráficos; además, se generan los índices respectivos en el formato pdf. Si estos provienen simplemente de archivos externos, se pueden almacenar en la carpeta ``imágenes'' e insertar así:
-\end{itemize}
-
-\begin{verbatim}
-```{r nombre, echo=FALSE, fig.cap="Imagen de ejemplo", fig.align = 'center', out.width = '50%'}
-knitr::include_graphics(path = "images/build_book.png")
-```
-\end{verbatim}
-
-Lo que hay aquí es un trozo o ``chunk'' de código R, que en (R)Markdown se inserta simplemente entre tres acentos invertidos (`````''). Luego hay dos partes: las especificaciones de formato que van entre llaves \{\}, y la instrucción de lo que hay que hacer, en este caso llamar una imagen. Vamos por parte:
-
-\begin{itemize}
-\tightlist
-\item
-  especificaciones de formato:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \texttt{r} solamente informa que viene código R
-  \item
-    \texttt{nombre}: es el nombre que identifica al chunk, puede ser cualquiera
-  \item
-    \texttt{echo=FALSE}: esto se utiliza para que solo se muestre el resultado sin el código. Si fuera \texttt{TRUE}, entonces aparecería la función que llama la imagen además que la mi\_imagen
-  \item
-    \texttt{fig.cap}: el título de la imagen
-  \item
-    \texttt{fig.align}: alineación de la figura
-  \item
-    \texttt{out.width}: ancho en relación a la página. Hay diferentes formas de especificar las dimensiones, la ventaja de esta es que funciona bien tanto para pdf como para html, por lo que se recomienda
-  \end{itemize}
-\item
-  instrucción o función: aquí se da la ruta a la imagen dentro del paréntesis con \texttt{path=}, y lo que antecede es la función para incluir gráficos de la librería knitr de R. Pero en simple: solo reemplazar el nombre de la imagen
-\end{itemize}
-
-Al incluir este trozo de código el resultado será el siguiente:
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.5\linewidth]{images/facso} 
-
-}
-
-\caption{Imagen de ejemplo}\label{fig:nombre2}
-\end{figure}
-
-Donde la referenciación (caption) tiene el número 1.2, que quiere decir que es la segunda imagen del capítulo 1. En el pdf ahora esta figura aparece en el índice de figuras.
-
-\begin{itemize}
-\tightlist
-\item
-  en el caso de gráficos generados por R, también se insertan dentro de un chunk, por ejemplo
-\end{itemize}
-
-\begin{verbatim}
-```{r echo=FALSE, fig.cap="Gráfico de ejemplo", fig.align = 'center', out.width = '50%'}
-boxplot(Sepal.Length~Species,data=iris,
-        xlab="Species", ylab="Sepal Length", main="Iris Boxplot")
-```
-\end{verbatim}
-
-Y el resultado es este:
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.5\linewidth]{tesis_files/figure-latex/unnamed-chunk-1-1} 
-
-}
-
-\caption{Gráfico de ejemplo}\label{fig:unnamed-chunk-1}
-\end{figure}
-
-\begin{itemize}
-\tightlist
-\item
-  finalmente para las tablas producidas por R, es un poco más difícil si se quiere obtener el documento tanto en html como en pdf (que se genera vía Latex). En este caso, las tablas deben ser producidas en formato markdown, lo que no es muy común todavía en las distintas librerías de R que en genera privilegian o html o latex. La función para producir tablas markdown en R es principalmente \texttt{kable}, de la librería \texttt{knitr}, por ejemplo:
-\end{itemize}
-
-\begin{verbatim}
-```{r tabla, echo=FALSE, caption="tabla de ejemplo", align = 'center'}
-knitr::kable(head(iris), caption = "An example table caption.")
-```
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}\FunctionTok{head}\NormalTok{(iris), }\AttributeTok{caption =} \StringTok{"Un ejemplo de tabla"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:unnamed-chunk-2}Un ejemplo de tabla}
-\centering
-\begin{tabular}[t]{r|r|r|r|l}
-\hline
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\hline
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-\hline
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-\hline
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-\hline
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-\hline
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\hline
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{itemize}
-\tightlist
-\item
-  nota sobre ubicación de imágenes y tablas en documento pdf (latex): en general se producen problemas en la ubicación, ya que automáticamente se ajustan al lugar disponible más cercano, sea atrás o delante. Si se quiere fijar la posición en el pdf, agregar antes y después del texto \texttt{\textbackslash{}FloarBarrier}, que es un comando latex que no será visible ni en pdf ni en html.
-\end{itemize}
-
-\hypertarget{publicaciuxf3n-web-y-versionamiento}{%
-\section{Publicación web y versionamiento}\label{publicaciuxf3n-web-y-versionamiento}}
-
-Una de las ventajas del formato html es poder publicarlo en línea para una fácil lectura y seguimiento. Esto puede ocurrir desde las fases iniciales o para el documento final, aumentando las posibilidades de difusión, colaboración y también de obtener revisiones y comentarios. De todas maneras, requiere algunos conocimientos más específicos que se introducen aquí.
-
-Existen diferentes maneras de generar un sitio web con el documento, pero el más directo es a través de \textbf{Github} y de su opción \emph{githubpages}. Git/Github es una plataforma de versionamiento y colaboración cuyos detalles y posibilidades claramente no alcanzan a ser cubiertos en este espacio, pero si se desea mayor información se puede revisar \href{https://cienciasocialabierta.netlify.app/class/08-class/}{aquí}.
+\textbf{Objetivos específicos:}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Generación de repositorio: para quienes obtuvieron la carpeta partiendo desde Github con un \emph{fork / clone} de tesisfacsodown el repositorio se encuentra listo. En caso de haber bajado/copiado la carpeta manera simple, entonces a) crear un repositorio en Github, b) clonarlo localmente, c) copiar/mover los archivos de la carpeta tesisfacsodown a la carpeta clonada
+  Describir la relación entre miedo a los actores relacionados a la protesta social y orientación política.
 \item
-  Subir los cambios al repositorio (push)
+  Determinar la relación entre el miedo y la justificación de la violencia en contexto de protesta social.
 \item
-  Una vez que los archivos ya están en el repositorio Github ir a Settings \textgreater{} Github Pages y dejar de la siguiente manera:
+  Determinar la relación entre la orientación política y la justificación de la violencia en contexto de protesta.
+\item
+  Determinar la interacción entre el miedo y la orientación política en la justificación de la violencia en contexto de protesta.
 \end{enumerate}
 
-\begin{figure}
+\hypertarget{marco-teuxf3rico}{%
+\chapter{Marco Teórico:}\label{marco-teuxf3rico}}
 
-{\centering \includegraphics[width=0.6\linewidth]{images/githubpages} 
+\hypertarget{perspectivas-sobre-la-violencia}{%
+\subsection{Perspectivas sobre la violencia}\label{perspectivas-sobre-la-violencia}}
 
-}
+Cuando se estudia el uso de la fuerza por parte de la policía, se remite en esencia al carácter monopólico y legítimo de la fuerza por parte del Estado. Desde cierto momento hobbesiano en donde se cede el ejercicio de la violencia al Estado, o entendiendo el carácter monopólico y legítimo del uso de la fuerza como propiedad fundamental del Estado moderno en Weber (Trovero, 2020), la idea del Estado parece inseparable de la violencia, aunque no sea reducible a esta.
 
-\caption{Bookdown en Github Pages}\label{fig:githubpages}
-\end{figure}
+El término violencia, es usado para describir fenómenos y conductas tanto individuales como colectivas, por lo que resulta especialmente difícil de definir y estudiar (Wieviorka, 2009). Independiente de su relación con el concepto de Estado, las definiciones de la violencia son múltiples y provenientes desde distintas ciencias y corrientes teóricas. Respecto a que es la violencia, Bufacchi (2005), delimita las definiciones del concepto a dos enfoques: 1. una aproximación minimalista, que acota el término a la aplicación intencional de fuerza física, y 2. Una aproximación extensiva, que define la violencia como acto de violación de derechos.
 
-Luego ``Save'' y se actualiza la página. Al bajar nuevamente a la sección de Github Pages debería aparecer ``Your site is ready to be published at {[}dirección web{]}''. Esa dirección es donde se puede acceder al sitio una vez que pasen algunos minutos.
+Una definición extensiva de la violencia más allá del uso de fuerza física, implica la transgresión de un límite, no obstante, la literatura es laxa respecto a definir qué es lo transgredido. Aunque permite observar otras formas de violencia, como simbólica o estructural, la falta de claridad conceptual conlleva la yuxtaposición de distintos planos de análisis en una situación victima-victimario.
 
-\hypertarget{antecedentes-conceptuales-y-empuxedricos}{%
-\chapter{Antecedentes conceptuales y empíricos}\label{antecedentes-conceptuales-y-empuxedricos}}
+Aunque fuerza y violencia no pueden ser entendidos como sinónimos, un acto violento sugiere el uso deliberado de la fuerza para dañar. Definir la violencia en estos términos, tiene la ventaja de establecer un límite claro respecto a lo que es un acto de violencia, evitando la tendencia a usar el término en otras situaciones de conflicto (Bufacchi, 2005). Debido a su claridad conceptual respecto a que es la violencia, nos centraremos en esta definición.
 
-\hypertarget{concepto-principal---explanandum---objeto-de-estudio}{%
-\section{(concepto principal - explanandum - objeto de estudio)}\label{concepto-principal---explanandum---objeto-de-estudio}}
+En cuanto a como se explica la violencia, en todas las corrientes existe una tensión entre el sujeto y la estructura, o bien entre lo individual y lo colectivo, en relación a las causas y el surgimiento del fenómeno. Arteaga (2003), sitúa el espacio de la violencia en base a los conceptos de distancia y diferencia. Aunque no explica la aparición del fenómeno, la idea de distancia social permite analizar la relación entre perpetrador y víctima en base a la aparición de un otro diferente, dibujando una frontera simbólica en donde se ejerce la violencia. En este espacio, hay una dimensión de evaluación normativa, en relación a la justificación del acto violento y a la relación entre perpetrador y víctima, dibujando espacios de inclusión o exclusión respecto a quienes y por qué se ejerce la violencia.
 
-\ldots{}
+\hypertarget{justificaciones-de-la-violencia-en-contexto-de-protesta}{%
+\subsection{Justificaciones de la violencia en contexto de protesta}\label{justificaciones-de-la-violencia-en-contexto-de-protesta}}
 
-\hypertarget{factores-asociados-a-objeto-de-estudio}{%
-\section{Factores asociados a objeto de estudio}\label{factores-asociados-a-objeto-de-estudio}}
+Como se mencionó anteriormente, la justificación de la violencia, se define como la argumentación que fundamente una situación de violencia para desvincularlo de lo injusto, considerándolo como algo comprensible y con sentido (Basaure, 2020). La literatura distingue las justificaciones de la violencia en contexto de protesta según quienes la ejecutan y cuál es su objetivo. Por un lado, la violencia ejercida por Carabineros (violencia por el control social), y por otro, la violencia empleada por los manifestantes (violencia por el cambio social) (Gerber, González, Jiménez-Moya, Moya, \& Jackson, 2018).
 
-\hypertarget{factor-1}{%
-\subsection{Factor 1}\label{factor-1}}
+La justificación de la violencia por el cambio social ha sido relacionada con la identificación con manifestantes, la eficacia percibida del uso de tácticas violentas, emociones negativas hacia Carabineros y emociones positivas hacia manifestantes de primera línea. Específicamente, la identificación con manifestantes actúa como mediador sobre la justificación de tácticas violentas en la protesta (Valeria, 2021).
 
-Al final de esta sección, enunciar la hipótesis correspondiente
+Así también, la justificación de la violencia en contexto de protesta ha sido relacionada con las teorías de justicia distributiva en Chile (Venegas, 2022). Quienes perciben menor injusticia en la distribución de los ingresos de los obreros, más justifican la violencia policial de Carabineros en situaciones como usar la fuerza para desalojar liceos tomados o reprimir marchas pacíficas. No obstante, el efecto del sentido de injusticia del obrero en la justificación de reprimir marchas pacíficas, pierde relevancia al incluir el efecto de ideologías autoritarias y de dominancia social. Por otra parte, quienes consideran que los gerentes están injustamente recompensados justifican más la violencia por el cambio social (Venegas, 2022).
 
-\hypertarget{factor-n}{%
-\subsection{Factor N}\label{factor-n}}
+Por otra parte, estudios previos indican que la legitimidad policial (Worden \& McLean, 2017) y la percepción de justicia procedimental (Tyler \& Blader, 2003), predicen la aceptación pública al uso de la violencia policial. Cuando las autoridades realizan procedimientos justos y neutrales, las personas se sienten valoradas y son más propensas a acatar voluntariamente la autoridad policial (Gerber, Figuereido, Sáez, \& Orchard, 2023). La legitimidad policial y la percepción de justicia procedimental, insta a los ciudadanos a aceptar el uso de la fuerza monopólica de la autoridad, pero solo cuando se mantiene dentro de ciertos límites normativos. La policía debe actuar de una forma procedimentalmente justa, pues actuar fuera de la ley eventualmente es una amenaza a su propia legitimidad (Bradford, Milani, \& Jackson, 2016). La percepción de injusticia en el trato se relaciona con menor legitimidad de las autoridades, lo que lleva a una mayor justificación de la acción colectiva no normativa (Gerber, González, Jiménez-Moya, Moya, \& Jackson, 2018).
 
-Al final de esta sección, enunciar la hipótesis correspondiente
+Los hallazgos más consistentes indican que los grupos minoritarios son más críticos hacia el uso de la violencia policial que los grupos mayoritarios (Arthur \& Case, 1994). Por ejemplo, en el caso de Chile, el efecto de la justicia procedimental es más fuerte en quienes se identifican como mapuches. Otras investigaciones, sugieren que factores sociodemográficos influyen en la justificación al uso de la violencia policial. En general los hombres justifican más el uso excesivo de la fuerza policial, así como personas con menor nivel educativo y personas adultas por sobre jóvenes (Gerber, y otros, 2021).
 
-\hypertarget{metodologuxeda}{%
-\chapter{Metodología}\label{metodologuxeda}}
+En virtud del estado de derecho, el estándar sobre el uso de la fuerza policial es normado por tres principios básicos que gozan de reconocimiento incontrovertido: el principio de necesidad, legalidad y proporcionalidad. El primero de ellos, implica que el uso de la fuerza debe contar con un fundamento jurídico suficiente, establecido previamente por el Estado, delimitando los parámetros del uso de la fuerza. El segundo de ellos, comprende tres obligaciones: usar medios no violentos cuando sea posible, bajo el único propósito de hacer cumplir la ley, y haciendo uso de la fuerza mínima necesaria que resulte razonable en las circunstancias existentes. Finalmente, el principio de proporcionalidad, que actúa como limitante frente al ejercicio de la fuerza, pues deben actuar según la gravedad del delito (Moral Araneda, 2021).
 
-\hypertarget{datos}{%
-\section{Datos}\label{datos}}
+Este límite en el uso de la fuerza policial resulta difuso, especialmente para los observadores. Sin embargo, diversas investigaciones resaltan que cuando el uso de la fuerza policial es excesivo, es decir, cuando sobrepasa la seriedad de la amenaza y el uso mínimo de la fuerza necesaria (Gerber, y otros, 2021), se necesita otro patrón de motivaciones, que está guiado por las creencias ideológicas de una persona acerca del orden social (Gerber \& Jackson, 2016).
 
-\hypertarget{variables}{%
-\section{Variables}\label{variables}}
+Para abarcar las diferencias en las justificaciones del uso de la violencia policial, se puede distinguir esta según sus objetivos: entre violencia policial como control social y violencia policial como castigo (Gerber, y otros, 2021). Mientras que el uso razonable de la fuerza, proporcional a la seriedad de la amenaza, y usando el mínimo de fuerza necesario, tiene por objetivo el control social, cuando el uso de la fuerza excede la seriedad de la amenaza y el mínimo de fuerza necesario, su objetivo no es solo controlar, sino que corresponde a una forma de castigo social.
 
-\hypertarget{muxe9todos}{%
-\section{Métodos}\label{muxe9todos}}
+Aunque se pueden distinguir dos motivaciones para apoyar la violencia policial, estudios previos indican que ambas formas de violencia policial se relacionan con el apoyo al castigo extralegal. Nuestra propuesta de estudio se centrará en las percepciones de violencia policial más allá de su objetivo, pues en el contexto de protesta social, ambas dimensiones expresan el apoyo a al control del orden público por parte de la policía (Gerber, y otros, 2021).
+
+\hypertarget{ideologuxeda-y-emociones}{%
+\subsection{Ideología y emociones}\label{ideologuxeda-y-emociones}}
+
+Aunque de larga data, el continuo izquierda-derecha se sigue utilizando para diferenciar posturas ideológicas en base a un criterio básico: su posición respecto a la igualdad (Bobbio, 1996). Para la derecha política, la desigualdad entre individuos se acepta al considerarla natural, valorando las tradiciones y costumbres. En cambio, la izquierda política considera la desigualdad como una característica social, favoreciendo políticas en torno a la igualdad. Como parte de un continuo con posiciones intermedias, denominadas como centro político, Bobbio (1996) distingue los extremos en base a su posición con la libertad. Mientras que las posiciones moderadas, difieren respecto al problema de la igualdad, aceptan las reglas de la democracia. Jost (2021), presenta una conceptualización similar, advirtiendo dos ejes que separan la izquierda y la derecha política. 1. advocar o resistir el cambio social y 2. aceptar o rechazar la desigualdad social, económica y política.
+
+Desde la psicología social se han reelaborado esas diferencias, proponiendo una perspectiva de la ideología como fenómeno motivado cognitivamente. El concepto ha sido definido brevemente por Erikson \& Tedin (2003; Jost, Federico, \& Napier, 2009) como un conjunto de creencias sobre el orden social y como este debe ser alcanzado. Las teorías de justificación sistémica (Jost, Banaji, \& Nosek, 2004), han utilizado críticamente el concepto como la manera en que mitos legitimadores consensuados contribuyen a la estabilidad de jerarquías y desigualdades sociales entre grupos (Jost, Nosek, \& Gosling, 2008).
+
+Una perspectiva de la ideología como fenómeno motivado cognitivamente pone especial énfasis en como esta refuerza necesidades o motivaciones de tipo epistémico, relacional y existencial (Jost, Ledgerwood, \& Hardin, 2008), que actúan como patrones de conducta alineando actitudes, creencias y preferencias de las personas con estas necesidades. Los motivos epistémicos están relacionados a la necesidad de orden, reducir incertidumbre, complejidad o ambigüedad, la búsqueda de seguridad y orden en la vida. Las motivaciones relacionales refieren al deseo de establecer relaciones interpersonales e identificarse socialmente. Finalmente, las motivaciones existenciales, que apuntan a la necesidad por manejar circunstancias amenazadoras y a la búsqueda de seguridad y sentido (Jost, Glaser, Kruglanski, \& Sulloway, 2003).
+
+Si la ideología es un conjunto de actitudes, valores y creencias, junto con motivaciones existenciales, epistémicas y relacionales, puede ser separada por su contenido discursivo y por su función, en cuanto las necesidades psicológicas y sociales que satisface. La relación entre contenido ideológico y función psicológica, se ordenaría como un proceso de afinidad lectiva, en donde los discursos ideológicos son seleccionados y reinterpretados en base a las motivaciones psicológicas de los individuos (Jost, Federico, \& Napier, 2009).
+
+La literatura advierte que existe una relación entre la percepción del miedo como motivación existencial y el conservadurismo político de derecha (Jost, Stern, Rule, \& Sterling, 2017). Una serie de estudios relacionan el apoyo a actitudes conservadoras con necesidades epistémicas y relacionales como la percepción de miedo, amenaza, intolerancia a la ambigüedad, evitar la incertidumbre y la necesidad de orden. Así mismo, otros estudios (Bonano \& Jost, 2006 en Jost, Federico, \& Napier, 2009), sugieren que el apoyo hacia actitudes conservadores y de derecha aumenta en periodos de inestabilidad política y económica, bajo la premisa de que la sensación de amenaza activa actitudes políticas y sociales que ofrecen soluciones simples pero rígidas en materia de seguridad (Thórisdóttir \& Jost, 2011).
+
+La influencia del miedo sobre otros fenómenos ha sido ampliamente estudiado en el ámbito de la criminología. Diversas investigaciones sugieren una distinción entre la medición de los índices objetivos de delitos, la percepción de inseguridad y el miedo al delito (Muratori \& Zubieta, 2013; Vozmediano, San Juan, \& Vergara, 2008). En este sentido, puede diferenciarse la medición del miedo como motivación existencial (Jost, Federico, \& Napier, 2009), a otras formas de medir el miedo. Específicamente, diversas percepciones y actitudes pueden verse afectadas por emociones específicas relacionadas al contexto de la protesta social y los actores involucrados (Jasper, 1998).
+
+El razonamiento argumentativo de esta investigación parte desde el siguiente planteamiento: el clima socio-emocional post-estallido, marcado por una crisis de inseguridad, puede generar percepciones diferenciadas hacia la protesta social, al elevar los niveles de incertidumbre y amenaza. En este marco, el miedo como motivación existencial, puede cobrar mayor relevancia, moderando la relación entre orientación política y justificación de la violencia policial. Es decir, independiente de la orientación política, si disminuye el miedo, disminuye la justificación de la violencia en contexto de protesta.
+
+Por otra parte, sentir más miedo a los actores involucrados a la protesta social puede interactuar positivamente con la orientación política. Por un lado, el miedo a manifestantes y la orientación política de derecha, pueden interactuar aumentando los chances de que los individuos justifiquen la violencia por el control social, bajo el razonamiento de que las manifestaciones representan una amenaza contra el orden público, la estabilidad y el orden social (Rottenbacher de Rojas \& Schmitz, 2013). Por otro lado, el miedo a Carabineros y la orientación política de izquierda pueden interactuar aumentando los chances de que los individuos justifiquen la violencia por el cambio social, bajo el razonamiento de que las emociones negativas hacia Carabineros tienen un efecto mayor sobre quienes son más proclives a justificar el cambio social.
+
+\hypertarget{hipuxf3tesis-de-investigaciuxf3n}{%
+\chapter{Hipótesis de investigación:}\label{hipuxf3tesis-de-investigaciuxf3n}}
+
+\textbf{H1}: Hay una asimetría en la percepción del miedo a los distintos actores de la protesta social. Las personas que se identifican con la derecha política \textbf{(H1a)} sienten más miedo a los manifestantes violentos, mientras que las personas de izquierda \textbf{(H1b)} sientes más miedo al accionar de Carabineros.
+
+\textbf{H2:} El miedo modera la relación entre orientación política y justificación de la violencia policial. Independiente de la orientación política, si disminuye el miedo, disminuye la probabilidad de que los individuos justifiquen de la violencia policial.
+
+\textbf{H3:} El miedo y la orientación política interactúan positivamente, aumentando la probabilidad de que los individuos justifiquen la violencia en contexto de protesta. El miedo a manifestantes y la orientación política de derecha interactúan aumentando los chances de que los individuos justifiquen la violencia por el control social \textbf{(H3a)}. El miedo a Carabineros y la orientación política de izquierda interactúan aumentando los chances de que los individuos justifiquen la violencia por el cambio social \textbf{(H3b)}.
+
+\hypertarget{marco-metodoluxf3gico}{%
+\chapter{Marco metodológico:}\label{marco-metodoluxf3gico}}
+
+El instrumento de medición utilizado para esta investigación es el Estudio Longitudinal Social de Chile (ELSOC) del Centro de Estudios de Conflicto y Cohesión Social de Chile (COES). Para mitigar los efectos de la atrición, el estudio tipo panel emplea dos muestras independientes, una original y otra de refresco. La estrategia de muestreo es probabilística y multietápica, seleccionando los casos por ciudades, bloques, viviendas e individuos, incluyendo en la población del estudio a hombres y mujeres entre 18 a 75 años en zonas urbanas de 40 ciudades del país (Centro de Estudios de Conflicto y Cohesión Social, 2022).
+
+Para esta investigación, se utilizará la última versión de la encuesta, cuyos datos fueron levantados entre julio y noviembre de 2022. Una vez extraídos los casos con al menos un dato perdido (listwise), la muestra efectiva se reduce a 820.
+
+\hypertarget{variables-dependientes}{%
+\subsection{Variables Dependientes}\label{variables-dependientes}}
+
+En base a la conceptualización de Basaure (2020) sobre justificación de la violencia y de Gerber et. al.~(2018), sobre violencia por el control social y violencia por el cambio social, utilizaremos dos variables dependientes para este estudio. Los indicadores señalados en \ref{tab:tab-dep}, corresponden a las siguientes preguntas: ¿En qué medida cree usted que se justifican o no se justifican las siguientes situaciones? 1. Que Carabineros use la fuerza para reprimir una manifestación pacífica. 2. Que estudiantes tiren piedras a Carabineros. Las categorías de respuestas corresponden a una escala Likert de 1 a 5 respecto a cuando se justifica la represión de una marcha pacífica.
+
+Error : Can't find dplyr
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2808}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2603}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1438}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1438}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1507}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Concept
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Indicator
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Stats / Values
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Freqs (\% of Valid)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Graph
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Justificación violencia por el control
+social & Que Carabineros use la fuerza para
+reprimir una manifestación pacifica & \begin{minipage}[t]{\linewidth}\raggedright
+1. Nunca\\
+2. Pocas veces\\
+3. Algunas veces\\
+4. Muchas veces\\
+5. Siempre\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+558 (68.0\%)\\
+107 (13.0\%)\\
+100 (12.2\%)\\
+35 ( 4.3\%)\\
+20 ( 2.4\%)\strut
+\end{minipage} & \includegraphics{tmp/ds0586.png} \\
+Justificación violencia por el cambio
+social & Que estudiantes tiren piedras a
+Carabineros en una marcha por la
+educación del país & \begin{minipage}[t]{\linewidth}\raggedright
+1. Nunca\\
+2. Pocas veces\\
+3. Algunas veces\\
+4. Muchas veces\\
+5. Siempre\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+698 (85.1\%)\\
+72 ( 8.8\%)\\
+34 ( 4.1\%)\\
+5 ( 0.6\%)\\
+11 ( 1.3\%)\strut
+\end{minipage} & \includegraphics{tmp/ds0587.png} \\
+\end{longtable}
+
+\begin{table}
+
+\caption{\label{tab:tab-dep}Variables Dependientes}
+\centering
+\begin{tabular}[t]{}
+\hline
+
+\hline
+\end{tabular}
+\end{table}
+
+\begin{center}
+<font size="1"> Fuente: Elaboración propia. </font>
+\end{center}
+
+\hypertarget{variables-independientes}{%
+\subsection{Variables Independientes}\label{variables-independientes}}
+
+Para distinguir la orientación política de los individuos usaremos como indicador la escala de auto ubicación política entre izquierda y derecha, en cuanto esta variable sirve como un resumen abstracto de la ideología política (Haye et. al, 2009). La variable original es una escala del 0 al 12, en donde 0 a 4 corresponde a izquierda, 5 es centro, de 6 a 10 corresponde a derecha, 11 a independiente y 12 a ninguno (apolítico). Para abarcar las distinciones políticas entre izquierda y derecha (Bobbio, 1996), la variable fue recodificada con los valores presentados en la tabla \ref{tab:tab-indep}.
+
+Respecto al miedo a manifestantes y a Carabineros, las variables fueron medidas a través de las preguntas: ¿En qué medida le generan miedo los siguientes actores y situaciones referidos a las protestas iniciadas a mediados de Octubre? 1. Los manifestantes violentos en las protestas. 2. El accionar de las fuerzas de seguridad pública en las manifestaciones. Las categorías de respuesta corresponden a una escala Likert de cinco categorías de respuestas.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2754}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2681}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1232}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1522}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1594}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Concept
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Indicator
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Stats / Values
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Freqs (\% of Valid)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Graph
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Orientación política & Orientación política & \begin{minipage}[t]{\linewidth}\raggedright
+1. Izquierda\\
+2. Centro\\
+3. Derecha\\
+4. Apolítico\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+157 (19.1\%)\\
+263 (32.1\%)\\
+130 (15.9\%)\\
+270 (32.9\%)\strut
+\end{minipage} & \includegraphics{tmp/ds0588.png} \\
+Miedo a manifestantes violentos & Grado de miedo: Los manifestantes
+violentos en las protestas & \begin{minipage}[t]{\linewidth}\raggedright
+1. Nada\\
+2. Poco\\
+3. Algo\\
+4. Bastante\\
+5. Mucho\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+27 ( 3.3\%)\\
+42 ( 5.1\%)\\
+116 (14.1\%)\\
+304 (37.1\%)\\
+331 (40.4\%)\strut
+\end{minipage} & \includegraphics{tmp/ds0589.png} \\
+Miedo al accionar de Carabineros en
+manifestaciones & Grado de miedo: El accionar de las
+fuerzas de seguridad en las
+manifestaciones & \begin{minipage}[t]{\linewidth}\raggedright
+1. Nada\\
+2. Poco\\
+3. Algo\\
+4. Bastante\\
+5. Mucho\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+101 (12.3\%)\\
+91 (11.1\%)\\
+198 (24.1\%)\\
+252 (30.7\%)\\
+178 (21.7\%)\strut
+\end{minipage} & \includegraphics{tmp/ds0590.png} \\
+\end{longtable}
+
+\begin{table}
+
+\caption{\label{tab:tab-indep}Variables Independientes}
+\centering
+\begin{tabular}[t]{}
+\hline
+
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{variables-de-control}{%
+\subsection{Variables de Control}\label{variables-de-control}}
+
+De acuerdo a estudios anteriores, factores socio-demográficos como edad, sexo y nivel socioeconómico influyen en la justificación de la violencia (Arthur \& Case, 1994). La violencia suele ser más aceptada por hombres por sobre mujeres, adultos por sobre jóvenes y personas con bajo nivel educativo por sobre individuos con alto nivel educativo. El nivel educacional de los entrevistados fue recodificado de 9 a 5 categorías de respuesta, siguiendo la codificación CINE 2011 (UNESCO, 2013). Así también, personas que pertenecientes a grupos indígenas (Gerber, González, Jiménez-Moya, Moya, \& Jackson, 2018) suelen justificar menos la violencia por el control social. La tabla \ref{tab:tab-control} muestra los valores y frecuencias para las variables de control mencionadas.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2199}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2199}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2340}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1489}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1560}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Concept
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Indicator
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Stats / Values
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Freqs (\% of Valid)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Graph
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Sexo & sexo & \begin{minipage}[t]{\linewidth}\raggedright
+1. Hombre\\
+2. Mujer\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+302 (36.8\%)\\
+518 (63.2\%)\strut
+\end{minipage} & \includegraphics{tmp/ds0591.png} \\
+Edad & Edad & \begin{minipage}[t]{\linewidth}\raggedright
+Mean (sd) : 49.4 (15.5)\\
+min \textless{} med \textless{} max:\\
+21 \textless{} 50 \textless{} 83\\
+IQR (CV) : 26 (0.3)\strut
+\end{minipage} & 62 distinct values & \includegraphics{tmp/ds0592.png} \\
+Pertenencia a grupo indígena & Pertenencia a grupo indígena & \begin{minipage}[t]{\linewidth}\raggedright
+1. No pertenece\\
+2. Pertenece a grupo indigen\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+746 (91.0\%)\\
+74 ( 9.0\%)\strut
+\end{minipage} & \includegraphics{tmp/ds0593.png} \\
+Nivel educativo & Nivel educativo & \begin{minipage}[t]{\linewidth}\raggedright
+1. Primaria incompleta\\
+2. Primaria y secundaria baj\\
+3. Secundaria alta\\
+4. Terciaria ciclo corto\\
+5. Terciaria y postgrado\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+98 (12.0\%)\\
+82 (10.0\%)\\
+354 (43.2\%)\\
+130 (15.9\%)\\
+156 (19.0\%)\strut
+\end{minipage} & \includegraphics{tmp/ds0594.png} \\
+\end{longtable}
+
+\begin{table}
+
+\caption{\label{tab:tab-control}Variables Independientes}
+\centering
+\begin{tabular}[t]{}
+\hline
+
+\hline
+\end{tabular}
+\end{table}
 
 \hypertarget{anuxe1lisis}{%
-\chapter{Análisis}\label{anuxe1lisis}}
+\subsection{Análisis}\label{anuxe1lisis}}
 
-\hypertarget{anuxe1lisis-descriptivo}{%
-\section{Análisis descriptivo}\label{anuxe1lisis-descriptivo}}
-
-\hypertarget{modelos}{%
-\section{Modelos}\label{modelos}}
-
-\hypertarget{conclusiones}{%
-\chapter{Conclusiones}\label{conclusiones}}
-
-\hypertarget{bibliografuxeda}{%
-\chapter*{Bibliografía}\label{bibliografuxeda}}
-\addcontentsline{toc}{chapter}{Bibliografía}
+En concordancia con los objetivos de esta investigación y las hipótesis planteadas, se utilizarán dos tipos de análisis. En primer lugar, usaremos estadísticos univariados para explorar las variables seleccionadas. En segundo lugar, utilizaremos análisis descriptivos bivariados y correlaciones para observar las relaciones entre las variables. Finalmente, debido al carácter categórico de las variables dependientes, propondremos una serie de modelos de regresión logística ordinal con efectos de interacción, que permitirá interpretar el efecto de las variables independientes en la dependiente observando la interacción entre las primeras.
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%% Bibliography                              %%%
